@@ -1,0 +1,11 @@
+.DS_*
+*.swp
+*.bbl
+*.blg
+*.pdf
+*.ome.*
+*.egg*
+*egg*
+*checkpoints*
+data/images/
+
