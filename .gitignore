@@ -1,11 +1,66 @@
+# This file exists to stop the addition of forbidden files into the github
+# respository, such as images, movies, and various dotfiles (such as .DS_store
+# on mac).
+
+
+# Ignore specific folders. 
+data/images/
+
+#Ignore trash dotfiles.
 .DS_*
+*.DS_store
+
+#Ignore latex garbage.
 *.swp
-*.bbl
+*.log
 *.blg
-*.pdf
+*.aux
+*.bbl
+*.fdb_latexmk
+*.fls
+*.gz
+
+#Ignore images
+*.jpg
+*.tif*
+*.png
+*.eps
+*.svg
+*.bmp
+*.hdr
 *.ome.*
+
+#Ignore movies and audio
+*.mp4
+*.mov
+*.avi
+*.wav
+*.mp3
+
+#Ignore Microsoft, Apple, and PDF documents.
+*.ppt*
+*.doc*
+*.xsl*
+*.numbers
+*.pages
+*.key
+*.pdf
+*.ai
+
+#Ignore various code garbage.
+*.pyc
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+__pycache__/
+**/__pycache__/
+.cache
 *.egg*
 *egg*
 *checkpoints*
-data/images/
 
+# Also zips & pickles. Add manually if you really want, since they won't diff well.
+*.zip
+*.pkl
+
+# Ignore segmentation status outfiles
+*seg_status.out*
